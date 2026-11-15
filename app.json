@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "elaiven-app",
+    "name": "Elaiven",
     "slug": "elaiven-app",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -17,7 +17,8 @@
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.elaiven"
     },
     "web": {
       "output": "static",
@@ -32,11 +33,21 @@
           "image": "./assets/images/splash-icon.png",
           "imageWidth": 76
         }
-      ]
+      ],
+      "expo-image",
+      "expo-secure-store",
+      "@react-native-community/datetimepicker",
+      "expo-localization"
     ],
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "5637fafe-445c-4fcb-a2ec-c609c4371929"
+      }
     }
   }
 }
